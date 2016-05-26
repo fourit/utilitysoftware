@@ -34,8 +34,8 @@
                     <?php 
 						include("../config.php");
 						$sql_loaisoft="Select * From loaisoft Order By thutu DESC";
-						$sql_loaisoft_excute=mysql_query($sql_loaisoft);
-						while($my_array_loaisoft=mysql_fetch_array($sql_loaisoft_excute))
+						$sql_loaisoft_excute=mysqli_query($connect,$sql_loaisoft);
+						while($my_array_loaisoft=mysqli_fetch_array($sql_loaisoft_excute))
 						{
 					?>
                     <tr>

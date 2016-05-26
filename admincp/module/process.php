@@ -5,8 +5,8 @@
 		$username=$_POST["username"];
 		$password=$_POST["password"];
 		$query="Select * From account Where username='".$username."' And password='".$password."'";
-		$query_excute=mysql_query($query);
-		$num_row=mysql_num_rows($query_excute);
+		$query_excute=mysqli_query($connect,$query);
+		$num_row=mysqli_num_rows($query_excute);
 		if($num_row==1)
 			{
 				$_SESSION["username"]=$username;

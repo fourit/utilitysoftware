@@ -12,8 +12,8 @@
         
 <?php
 	$sql="Select idbaiviet,tieudebaiviet,urlbaiviet,trangthai From baiviet Order by idbaiviet DESC";
-	$sql_query_excute=mysql_query($sql);
-	while($myarray_listbaiviet=mysql_fetch_array($sql_query_excute))
+	$sql_query_excute=mysqli_query($connect,$sql);
+	while($myarray_listbaiviet=mysqli_fetch_array($sql_query_excute))
 	{
 ?>
 	<tr>

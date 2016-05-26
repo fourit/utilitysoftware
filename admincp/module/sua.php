@@ -1,10 +1,10 @@
 <?php 
 	include("editor.php"); 
 	$sql_loaisoft="Select * From loaisoft";
-	$sql_loaisoft_excute=mysql_query($sql_loaisoft);
+	$sql_loaisoft_excute=mysqli_query($connect,$sql_loaisoft);
 	$sql_suabaiviet="Select * From baiviet Where idbaiviet='".$_GET['idbaiviet']."'";
-	$sql_sua_excute=mysql_query($sql_suabaiviet);
-	$myarray_suabaiviet=mysql_fetch_array($sql_sua_excute);
+	$sql_sua_excute=mysqli_query($connect,$sql_suabaiviet);
+	$myarray_suabaiviet=mysqli_fetch_array($sql_sua_excute);
 ?>
 <div class="row">
 	<div class="col-md-8">
@@ -26,7 +26,7 @@
                 </p>
                 <p>Phần mềm: <select name="loaisoft">
                         <?php
-                            while($myarray_loaisoft=mysql_fetch_array($sql_loaisoft_excute))
+                            while($myarray_loaisoft=mysqli_fetch_array($sql_loaisoft_excute))
                             {
                         ?> 
                         <option <?php if($myarray_loaisoft['tenloaisoft']==$myarray_suabaiviet['loaisoft']) echo "selected"; ?> value="<?php echo $myarray_loaisoft["tenloaisoft"]; ?>"><?php echo $myarray_loaisoft["tendaydu"]; ?></option>

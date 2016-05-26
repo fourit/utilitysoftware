@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-md-5 col-sm-5 log-form col-xs-pull-3">
 					<form action="module/process.php" method="post">
-                    	<p>Username: <input type="text" name="username" placeholder="Nhập username...."></p>
+                    	<p>Username: <input autofocus type="text" name="username" placeholder="Nhập username...."></p>
                         <p>Password: <input type="password" name="password" placeholder="Nhập password...."></p>
                         <p><input type="submit" name="login" value="Đăng nhập"><a href="#">Quên mật khẩu?</a></p>
                     </form>

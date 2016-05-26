@@ -2,7 +2,7 @@
 	include('editor.php');
 	include("../config.php");
 	$sql_loaisoft="Select * From loaisoft";
-	$sql_loaisoft_excute=mysql_query($sql_loaisoft);
+	$sql_loaisoft_excute=mysqli_query($connect,$sql_loaisoft);
 ?>
 <div class="row">
 	<div class="col-md-8">
@@ -22,7 +22,7 @@
                 </p>
                 <p>Phần mềm: <select name="loaisoft">
                         <?php
-                            while($myarray_loaisoft=mysql_fetch_array($sql_loaisoft_excute))
+                            while($myarray_loaisoft=mysqli_fetch_array($sql_loaisoft_excute))
                             {
                         ?> 
                         <option value="<?php echo $myarray_loaisoft["tenloaisoft"]; ?>"><?php echo $myarray_loaisoft["tendaydu"]; ?></option>

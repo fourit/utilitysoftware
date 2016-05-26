@@ -11,21 +11,21 @@
 			{
 				$cp-=1;	if($cp<0) $cp=$cp+abs($cp); //Lấy chỉ số limit bắt đầu từ record 0
 				$cp*=10;//Mỗi page lấy 10 bản ghi và page thứ 2 bắt đầu từ vị trí thứ 1*10
-				$sql="Select * From baiviet Where trangthai='Hienthi' limit $cp,10";
-				$sql_num_row="Select * From baiviet Where trangthai='Hienthi'";	
+				$sql="Select * From baiviet Where trangthai='Hienthi' Order By idbaiviet DESC limit $cp,10";
+				$sql_num_row="Select * From baiviet Where trangthai='Hienthi' Order By idbaiviet DESC";	
 			}
 		else
 				{
 					$cp-=1; if($cp<0) $cp=$cp+abs($cp); 
 					$cp*=10; 
-					$sql="Select * From baiviet Where loaitin='".$_GET['baiviet']."' And trangthai='Hienthi' limit $cp,10";
-					$sql_num_row="Select * From baiviet Where loaitin='".$_GET['baiviet']."' And trangthai='Hienthi'";
+					$sql="Select * From baiviet Where loaitin='".$_GET['baiviet']."' And trangthai='Hienthi' Order By idbaiviet DESC limit $cp,10";
+					$sql_num_row="Select * From baiviet Where loaitin='".$_GET['baiviet']."' And trangthai='Hienthi' Order By idbaiviet DESC";
 				}
 		if($loaisoft!=NULL)
 		{
 			if($cp<0) $cp=$cp+abs($cp); 
-			$sql="Select * From baiviet Where loaisoft='".$_GET['loaisoft']."' And trangthai='Hienthi' limit $cp,10";
-			$sql_num_row="Select * From baiviet Where loaisoft='".$_GET['loaisoft']."' And trangthai='Hienthi'";
+			$sql="Select * From baiviet Where loaisoft='".$_GET['loaisoft']."' And trangthai='Hienthi' Order By idbaiviet DESC limit $cp,10";
+			$sql_num_row="Select * From baiviet Where loaisoft='".$_GET['loaisoft']."' And trangthai='Hienthi' Order By idbaiviet DESC";
 		}
 		$cp/=10;
 		if($_GET['baiviet']=='lienhe')
@@ -92,7 +92,7 @@
 			$idbaiviet=$_GET["idbaiviet"];
 			$sql="Select * From baiviet Where loaitin='".$chitietloaitin."' And trangthai='Hienthi' And idbaiviet=".$idbaiviet."";
 			if(is_null($_GET['baiviet']) or $_GET['baiviet']=='trangchu')
-				$sql="Select * From baiviet Where trangthai='Hienthi' And idbaiviet=".$idbaiviet."";
+				$sql="Select * From baiviet Where trangthai='Hienthi' And idbaiviet=".$idbaiviet." Order By idbaiviet DESC";
 			$query_excute1=mysqli_query($connect,$sql);
 			$my_array=mysqli_fetch_array($query_excute1);
 		?>
