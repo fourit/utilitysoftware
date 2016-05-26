@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteRule "index.html"  "index.php"
+RewriteRule "^(.*)-(.*).html$" "index.php?url=$1&idbaiviet=$2"
+
+RewriteRule "^software/(.*)$" "index.php?loaisoft=$1"
+
+RewriteRule "^(.*)-(.*).html$" "index.php?urlbaiviet=$1&idbaiviet=$2"
+
+RewriteRule "^category/(.*)$" "index.php?baiviet=$1"
+
+
+
+RewriteRule "^(.*)-(.*).html$" "index.php?url=$1&idbaiviet=$2"

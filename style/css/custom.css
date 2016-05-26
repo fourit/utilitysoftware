@@ -1,0 +1,224 @@
+﻿*{
+	padding:0px;
+	margin:0px;	
+}
+/*Login trang quản trị*/
+.log{
+	margin-top:150px;	
+	background-color:#4ca9e1;
+	height:auto;
+	margin-bottom:150px;
+	text-align:center;
+}
+.log-img{
+	padding-top:50px;	
+}
+.log-form{
+	padding-top:80px;
+	padding-bottom:100px;	
+}
+/*Trang quản trị Thủ Thuật - Tiên Ích - AdminCP*/
+.header{
+	background:#ff6e01;
+/*	background:#545353;*/
+	height:auto !important;	
+	text-align:center;
+	text-transform:uppercase;
+	color:#FFF;
+	font-size:20px;
+	padding-bottom:30px;
+	padding-top:30px;
+}
+.header-adcp{
+	background:#222222;
+/*	background:#545353;*/
+	height:200px;	
+	text-align:center;
+	text-transform:uppercase;
+	color:#FFF;
+	font-size:20px;
+}
+
+.header-adcp .container .row .col-sm-12 p{
+	padding-top:20px;	
+}	
+.col-sm-2.content-left{
+	background:#F5F5F5;	
+}
+.col-sm-10.content-right{
+	background:#F5F5F5;
+}
+.content{
+	height:auto;
+}
+.date-time p{
+	padding-left:40px;
+	font-size:12px;
+	font-style:italic;	
+}
+/*End trang quản trị Thủ Thuật - Tiên Ích - AdminCP*/
+/*Menu dọc trang quản trị Thủ Thuật Tiện ích - Admincp*/
+.num-row{
+	float:right;
+}
+.menu ul{
+	list-style:none;
+}
+.menu ul li{
+	padding:50px 20px;	
+}
+.menu ul li a:hover{
+	background:#DADADA;	
+}
+.thembaiviet{
+	padding-left:30px;	
+}
+.container.main-menu{
+	max-width:1100px;	
+}
+a.glyphicon{
+	color:#2D23E4;	
+	font-size:20px;
+}
+ul.nav li{
+	font-size:14px;
+	text-transform:uppercase;	
+}
+ul.nav li a{
+	padding-left:25px;	
+	padding-right:30px;
+	color:#2894FF;
+}
+
+/*End*/
+
+/*Content*/
+.content{
+	background-color:#f3f3fb;
+	height:auto;
+}
+.tieudebaiviet{
+	padding-top:40px;	
+}
+.tieudebaiviet .col-sm-12 a{
+	font-size:35px;	
+}
+.tieudechitietloaitin{
+	padding-top:30px;	
+	padding-bottom:50px;
+	color:#337ab7;
+}
+.tieudechitietloaitin .col-sm-12{
+	font-size:30px;	
+}
+.chitietnoidungbaiviet .col-sm-6{
+	padding-right:30px;	
+}
+.img-res img{
+	position:relative;
+    left:12%;
+    z-index:12;
+    width:65%;	
+}
+.baivietlienquan .col-sm-11{
+	height:10px;
+	padding-bottom:30px;
+	padding-top:100px;
+}
+
+p.nguoi-dang{
+	font-size:12px;	
+	font-style:italic;
+}
+/*End content*/
+
+/*Menu dọc bên phải*/
+.category .col-sm-12, .baivietmoinhat .col-sm-12{
+	margin-top:20px;	
+	background:#333333;
+	color:#FFFFFF;
+	text-transform:uppercase;
+	font-size:16px;
+	padding:10px;
+	margin-bottom:20px;
+}
+.category .glyphicon, .baivietmoinhat .glyphicon{
+	color:#f39c12;	
+}
+.co-the-ban-quan-tam{
+	text-align:center;	
+	color:#828282;
+}
+.col-sm-6.box-co-the-ban-quan-tam:nth-child(3n) {
+    clear: both;
+}
+
+.box-co-the-ban-quan-tam{
+	padding:30px;	
+}
+.menu-doc{
+	padding-bottom:20px;	
+}
+.menu-doc .col-sm-3{
+	height:auto;
+	color:#337ab7;	
+}
+.menu-doc .col-sm-6{
+	height:auto;	
+}
+/*Phân trang ở đây*/
+ul.phantrang{
+	list-style:none;
+	padding-top:60px;
+	padding-left:25%;	
+}
+ul.phantrang li{
+	float:left;
+	padding:10px;	
+}
+/*Bài viết mới nhất*/
+.list_baivietmoinhat .col-sm-1 .img-responsive{
+	height:auto;	
+}
+.list_baivietmoinhat{
+	padding-bottom:20px;
+	padding-top:20px;	
+}
+.capnhatboi{
+	font-size:12px;
+	font-style:italic;	
+}
+.content{
+	padding-bottom:50px;	
+}
+/*Footer*/
+.footer{
+	background:#ff6e01;	
+}
+.list-loaisoft{
+	padding-top:10px;	
+	
+	color:#FFF;
+}
+.list-loaisoft ul{
+	padding-left:30px;	
+}
+.list-loaisoft a{
+	color:#FFF;	
+}
+.list-loaisoft ul li a:hover{
+	color:#337ab7;	
+	text-decoration:none;
+}
+<!--Box Search-->
+
+<!--Footer about-->
+.about>p{
+	text-align:center;	
+}
+.container.about{
+	max-width:700px
+}
+.tom-tat-co-the-ban-quan-tam{
+	font-size:9px;	
+}
